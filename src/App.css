@@ -1,38 +1,149 @@
-.App {
-  text-align: center;
+
+html {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  user-select: none;
+  background: linear-gradient(#05C0FF, #F7FDFF);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.box {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  /*animation-name: box-animation;*/
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  border-radius: 100px;
+
+  background-color: #eb125d;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
+@keyframes box-animation {
   from {
-    transform: rotate(0deg);
+    background-color: #246e89;
+    border: 10px solid black;
+    left: 0;
+    top: 0;
   }
   to {
-    transform: rotate(360deg);
+
+    border: 20px solid greenyellow;
+    background-color: #eb125d;
+    left: 100px;
+    top: 100px;
   }
 }
+
+#container , .gutter {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(#05C0FF, #F7FDFF);
+}
+
+#bird-herd {
+  height: 110px;
+  width: 125px;
+  position: absolute;
+  top: 20vh;
+}
+
+#cloud1 img {
+  height: 167px;
+  width: 390px;
+  top: 10vh;
+  position: absolute;
+
+}
+
+#cloud2 img {
+  height: 167px;
+  width: 390px;
+  position: absolute;
+  top: 30vh;
+
+}
+
+#bird-predater {
+  position: absolute;
+  top: 60vh;
+}
+
+#bird-predater img {
+  height: 105px;
+  width: 90px;
+
+}
+
+#wolf-predater {
+  position: absolute;
+  bottom: 32px;
+  right: 0;
+  left: 20vw;
+}
+
+#wolf-predater img {
+  height: 150px;
+  width: 337px;
+
+}
+
+#tree {
+  position: absolute;
+  bottom:  66px;
+
+}
+
+#tree img {
+  height: 272px;
+  width: 200px;}
+
+#rock {
+  position: absolute;
+  bottom: 50px;
+
+}
+
+#rock img {
+  height: 80px;
+  width: 300px;
+
+}
+
+#tabbit {
+  position: absolute;
+  bottom:56px;
+  left: 80vw;
+}
+
+#tabbit img {
+  height: 130px;
+  width: 200px;
+
+}
+
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+}
+
+footer img {
+  height: 100%;
+  width: 100%;
+}
+
